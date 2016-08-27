@@ -20,7 +20,6 @@
 # Everything in this directory will become public
 
 # Enable support for chinook sensorhub
-GAPPS_VARIANT := stock
 TARGET_USES_CHINOOK_SENSORHUB := false
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
@@ -480,7 +479,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc.0/f9824900.sdhci/by-name/system
 PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/platform/soc.0/f9824900.sdhci/by-name/vendor
 $(call inherit-product, build/target/product/verity.mk)
-
-$(call inherit-product, vendor/google/build/opengapps-packages.mk)
-GAPPS_FORCE_PACKAGE_OVERRIDES := true
-GAPPS_FORCE_MATCHING_DPI := true
