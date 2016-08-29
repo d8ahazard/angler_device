@@ -20,7 +20,7 @@
 # Everything in this directory will become public
 
 # Enable support for chinook sensorhub
-GAPPS_VARIANT := stock
+GAPPS_VARIANT := super
 TARGET_USES_CHINOOK_SENSORHUB := false
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
